@@ -14,9 +14,9 @@ def main():
               %s
             </h3>
             <p>
-              Download：<a href="%s" target="_blank">Click link</a><br>
-              Size：%s<br>
-              Update：%s
+              Download: <a href="%s" target="_blank">Click link</a><br>
+              Size: %s<br>
+              Update: %s
             </p>
           </div>""" % (name, link, size, time)
 
