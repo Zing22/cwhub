@@ -28,6 +28,10 @@
           <a href="https://github.com/Zing22/cwhub" id="view-on-github" class="button"><span>View on GitHub</span></a>
         </section> -->
 
+        <div class="search-div">
+          <input type="text" id="search-input" placeholder="Search...">
+        </div>
+
 
         <section id="main_content">
           <div class="item">
@@ -199,21 +203,6 @@
 
 
     <script type="text/javascript" src="http://libs.useso.com/js/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      // sort the list
-      $(document).ready(function() {
-        var ls = $(".item");
-        ls.sort(function(a,b) {
-          return $(a).children("h3").text().localeCompare($(b).children("h3").text());
-        });
-
-        $(ls).each(function(n, el) {
-          $("#main_content").append(el);
-        });
-
-
-        $("#cw-num").text($(ls).length);
-      })
-    </script>
+    <script type="text/javascript" src="javascripts/main.js"></script>
   </body>
   </html>
