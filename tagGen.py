@@ -1,13 +1,13 @@
 # -*- coding:utf-8 -*-
 
 def main():
-    time = raw_input("Time:")
+    time = str(input("Time:"))
     while True:
-        name = raw_input("Name:").strip()
-        link = raw_input("Link:").strip()
-        size = raw_input("Size:").strip()
+        name = str(input("Name:").strip())
+        link = str(input("Link:").strip())
+        size = str(input("Size:").strip())
 
-        print """
+        print ("""
           <div class="item">
             <hr>
             <h3>
@@ -18,7 +18,7 @@ def main():
               Size: %s<br>
               Update: %s
             </p>
-          </div>""" % (name, link, size, time)
+          </div>""" % (name, link, size, time))
 
 if __name__ == '__main__':
     main()
